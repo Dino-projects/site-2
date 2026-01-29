@@ -2,120 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sign Up Form</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="form-wrapper">
-    <h2>Sign Up</h2>
+<div class="container">
+    <div class="top-bar">Sign Up</div>
 
-    <form>
+    <form class="form">
 
-        <div class="form-row">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" placeholder="Enter First Name..." required>
+        <div class="row">
+            <label>First Name</label>
+            <input type="text" placeholder="Enter First Name..." required>
         </div>
 
-        <div class="form-row">
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" placeholder="Enter Last Name..." required>
+        <div class="row">
+            <label>Last Name</label>
+            <input type="text" placeholder="Enter Last Name..." required>
         </div>
 
-        <div class="form-row">
-            <label for="screenName">Screen Name</label>
-            <input type="text" id="screenName" placeholder="Enter Screen Name..." required>
+        <div class="row">
+            <label>Screen Name</label>
+            <input type="text" placeholder="Enter Screen Name..." required>
         </div>
 
-        <div class="form-row">
+        <div class="row">
             <label>Date of Birth</label>
-            <div class="dob-group">
+            <div class="dob">
                 <select required>
                     <option value="">Month</option>
-                    <option>January</option>
-                    <option>February</option>
-                    <option>March</option>
-                    <option>April</option>
                     <option>May</option>
-                    <option>June</option>
-                    <option>July</option>
-                    <option>August</option>
-                    <option>September</option>
-                    <option>October</option>
-                    <option>November</option>
-                    <option>December</option>
                 </select>
 
                 <select required>
                     <option value="">Day</option>
-                    <!-- 1–31 -->
-                    <script>
-                        for(let i=1;i<=31;i++){
-                            document.write(`<option>${i}</option>`);
-                        }
-                    </script>
+                    <option>5</option>
                 </select>
 
                 <select required>
                     <option value="">Year</option>
-                    <script>
-                        for(let y=2025;y>=1950;y--){
-                            document.write(`<option>${y}</option>`);
-                        }
-                    </script>
+                    <option>1985</option>
                 </select>
             </div>
         </div>
 
-        <div class="form-row">
+        <div class="row">
             <label>Gender</label>
-            <div class="radio-group">
-                <label><input type="radio" name="gender" value="male" required> Male</label>
-                <label><input type="radio" name="gender" value="female"> Female</label>
+            <div class="gender">
+                <label><input type="radio" name="gender" required> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
             </div>
         </div>
 
-        <div class="form-row">
-            <label for="country">Country</label>
-            <select id="country" required>
+        <div class="row">
+            <label>Country</label>
+            <select required>
                 <option value="">Select Country</option>
                 <option>USA</option>
-                <option>Ukraine</option>
-                <option>Germany</option>
-                <option>France</option>
             </select>
         </div>
 
-        <div class="form-row">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="Enter E-mail..." required>
+        <div class="row">
+            <label>E-mail</label>
+            <input type="email" placeholder="Enter E-mail..." required>
         </div>
 
-        <div class="form-row">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" placeholder="Enter Phone..." required>
+        <div class="row">
+            <label>Phone</label>
+            <input type="tel" placeholder="Enter Phone..." required>
         </div>
 
-        <div class="form-row">
-            <label for="password">Password</label>
-            <input type="password" id="password" required>
+        <div class="row">
+            <label>Password</label>
+            <input type="password" required>
         </div>
 
-        <div class="form-row">
-            <label for="confirmPassword">Confirm Password</label>
-            <input type="password" id="confirmPassword" required>
+        <div class="row">
+            <label>Confirm Password</label>
+            <input type="password" required>
         </div>
 
-        <div class="form-row checkbox-row">
-            <label>
-                <input type="checkbox" required>
-                I agree to the Terms of Use
-            </label>
+        <div class="row checkbox-row">
+            <input type="checkbox" required>
+            <span>I agree to the Terms of Use</span>
         </div>
 
         <div class="buttons">
-            <button type="submit" class="submit-btn">Submit</button>
-            <button type="reset" class="cancel-btn">Cancel</button>
+            <button type="submit" class="submit">submit</button>
+            <button type="reset" class="cancel">Cancel</button>
         </div>
 
     </form>

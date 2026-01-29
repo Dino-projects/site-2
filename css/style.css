@@ -1,56 +1,67 @@
 body {
-    background: #1f2633;
+    margin: 0;
     font-family: Arial, sans-serif;
+    background: #1f2633;
 }
 
-.form-wrapper {
-    width: 600px;
+.container {
+    width: 700px;
     margin: 40px auto;
     background: #232b3b;
-    border-top: 6px solid #d68600;
-    border-bottom: 6px solid #d68600;
-    padding: 20px 40px;
+    border-top: 8px solid #d68600;
+    border-bottom: 8px solid #d68600;
+    padding-bottom: 20px;
+}
+
+.top-bar {
+    background: #d68600;
     color: #ffd54d;
+    padding: 12px 20px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-h2 {
-    margin-bottom: 20px;
+.form {
+    padding: 25px 40px;
 }
 
-.form-row {
-    display: flex;
+.row {
+    display: grid;
+    grid-template-columns: 170px 1fr;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.form-row label {
-    width: 160px;
+.row label {
+    color: #ffd54d;
     font-weight: bold;
 }
 
-.form-row input,
-.form-row select {
-    flex: 1;
+.row input,
+.row select {
     padding: 8px;
     border-radius: 4px;
     border: none;
+    width: 100%;
 }
 
-.dob-group {
+.dob {
     display: flex;
-    gap: 10px;
-    flex: 1;
+    gap: 12px;
 }
 
-.radio-group {
+.gender {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     color: white;
 }
 
 .checkbox-row {
-    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: white;
+    margin-left: 170px;
 }
 
 .buttons {
@@ -58,7 +69,7 @@ h2 {
     margin-top: 20px;
 }
 
-.submit-btn {
+.submit {
     background: #2ecc71;
     color: white;
     border: none;
@@ -66,7 +77,7 @@ h2 {
     border-radius: 4px;
 }
 
-.cancel-btn {
+.cancel {
     background: #e74c3c;
     color: white;
     border: none;
