@@ -14,65 +14,80 @@
     <form class="form">
 
         <div class="row">
-            <label>First Name</label>
-            <input type="text" placeholder="Enter First Name..." required>
+            <label for="firstName">First Name</label>
+            <input id="firstName" name="firstName" type="text" placeholder="Enter First Name..." required>
         </div>
 
         <div class="row">
-            <label>Last Name</label>
-            <input type="text" placeholder="Enter Last Name..." required>
+            <label for="lastName">Last Name</label>
+            <input id="lastName" name="lastName" type="text" placeholder="Enter Last Name..." required>
         </div>
 
         <div class="row">
-            <label>Screen Name</label>
-            <input type="text" placeholder="Enter Screen Name..." required>
+            <label for="screenName">Screen Name</label>
+            <input id="screenName" name="screenName" type="text" placeholder="Enter Screen Name..." required>
         </div>
 
         <div class="row">
             <label>Date of Birth</label>
             <div class="dob">
-                <select required><option>Month</option></select>
-                <select required><option>Day</option></select>
-                <select required><option>Year</option></select>
+                <select id="month" name="month" required>
+                    <option value="">Month</option>
+                </select>
+                <select id="day" name="day" required>
+                    <option value="">Day</option>
+                </select>
+                <select id="year" name="year" required>
+                    <option value="">Year</option>
+                </select>
             </div>
         </div>
 
         <div class="row">
             <label>Gender</label>
             <div class="gender">
-                <label class="radio"><input type="radio" name="gender" required> Male</label>
-                <label class="radio"><input type="radio" name="gender"> Female</label>
+                <label class="radio" for="male">
+                    <input id="male" name="gender" type="radio" value="male" required>
+                    Male
+                </label>
+
+                <label class="radio" for="female">
+                    <input id="female" name="gender" type="radio" value="female">
+                    Female
+                </label>
             </div>
         </div>
 
         <div class="row">
-            <label>Country</label>
-            <select required><option>Select Country</option></select>
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="">Select Country</option>
+            </select>
         </div>
 
         <div class="row">
-            <label>E-mail</label>
-            <input type="email" placeholder="Enter E-mail..." required>
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="Enter E-mail..." required>
         </div>
 
         <div class="row">
-            <label>Phone</label>
-            <input type="tel" placeholder="Enter Phone..." required>
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="Enter Phone..." required>
         </div>
 
         <div class="row">
-            <label>Password</label>
-            <input type="password" required>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required>
         </div>
 
         <div class="row">
-            <label>Confirm Password</label>
-            <input type="password" required>
+            <label for="confirmPassword">Confirm Password</label>
+            <input id="confirmPassword" name="confirmPassword" type="password" required>
         </div>
 
         <div class="agree">
-            <input type="checkbox" required>
-            <span>I agree to the Terms of Use</span>
+            <input id="agree" name="agree" type="checkbox" required>
+            <label for="agree">I agree to the Terms of Use</label>
         </div>
 
     </form>

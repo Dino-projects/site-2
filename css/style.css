@@ -11,7 +11,6 @@ body {
     border-top: 6px solid #d68600;
 }
 
-/* верхня панель */
 .top-bar {
     background: #d68600;
     color: #ffd54d;
@@ -20,14 +19,13 @@ body {
     font-weight: bold;
 }
 
-/* форма */
 .form {
     padding: 20px 40px;
 }
 
 .row {
     display: grid;
-    grid-template-columns: 160px 1fr; /* було 140 */
+    grid-template-columns: 160px 1fr;
     align-items: center;
     margin-bottom: 12px;
 }
@@ -37,9 +35,8 @@ body {
     font-weight: bold;
     text-align: right;
     padding-right: 10px;
-    white-space: nowrap; /* заборона переносу */
+    white-space: nowrap;
 }
-
 
 .row input,
 .row select {
@@ -54,7 +51,6 @@ body {
     gap: 10px;
 }
 
-/* gender */
 .gender {
     display: flex;
     align-items: center;
@@ -69,7 +65,6 @@ body {
     font-weight: bold;
 }
 
-/* checkbox */
 .agree {
     margin-left: 160px;
     margin-top: 10px;
@@ -79,14 +74,12 @@ body {
     color: white;
 }
 
-/* нижня панель */
 .bottom-bar {
     background: #d68600;
     padding: 10px 20px;
     text-align: right;
 }
 
-/* кнопки */
 .submit {
     background: #2ecc71;
     color: white;
