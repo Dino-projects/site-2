@@ -2,102 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 3 Anime</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+    <section class="top-block">
+        <h1 class="main-title">TOP-3 Best Anime</h1>
 
-    <div class="top-bar">Sign Up</div>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/image1.jpg" alt="Attack on Titan">
+                </div>
+                <h3>Attack on Titan</h3>
+                <p>A world where humanity lives inside cities surrounded by enormous walls.</p>
+            </div>
 
-    <form class="form">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/image2.jpg" alt="Naruto">
+                </div>
+                <h3>Naruto</h3>
+                <p>A story about a young ninja who seeks recognition from his peers.</p>
+            </div>
 
-        <div class="row">
-            <label for="firstName">First Name</label>
-            <input id="firstName" name="firstName" type="text" placeholder="Enter First Name..." required>
-        </div>
-
-        <div class="row">
-            <label for="lastName">Last Name</label>
-            <input id="lastName" name="lastName" type="text" placeholder="Enter Last Name..." required>
-        </div>
-
-        <div class="row">
-            <label for="screenName">Screen Name</label>
-            <input id="screenName" name="screenName" type="text" placeholder="Enter Screen Name..." required>
-        </div>
-
-        <div class="row">
-            <label>Date of Birth</label>
-            <div class="dob">
-                <select id="month" name="month" required>
-                    <option value="">Month</option>
-                </select>
-                <select id="day" name="day" required>
-                    <option value="">Day</option>
-                </select>
-                <select id="year" name="year" required>
-                    <option value="">Year</option>
-                </select>
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/image3.jpg" alt="Fullmetal Alchemist">
+                </div>
+                <h3>Fullmetal Alchemist</h3>
+                <p>Two brothers search for the Philosopher's Stone to restore their bodies.</p>
             </div>
         </div>
-
-        <div class="row">
-            <label>Gender</label>
-            <div class="gender">
-                <label class="radio" for="male">
-                    <input id="male" name="gender" type="radio" value="male" required>
-                    Male
-                </label>
-
-                <label class="radio" for="female">
-                    <input id="female" name="gender" type="radio" value="female">
-                    Female
-                </label>
-            </div>
-        </div>
-
-        <div class="row">
-            <label for="country">Country</label>
-            <select id="country" name="country" required>
-                <option value="">Select Country</option>
-            </select>
-        </div>
-
-        <div class="row">
-            <label for="email">E-mail</label>
-            <input id="email" name="email" type="email" placeholder="Enter E-mail..." required>
-        </div>
-
-        <div class="row">
-            <label for="phone">Phone</label>
-            <input id="phone" name="phone" type="tel" placeholder="Enter Phone..." required>
-        </div>
-
-        <div class="row">
-            <label for="password">Password</label>
-            <input id="password" name="password" type="password" required>
-        </div>
-
-        <div class="row">
-            <label for="confirmPassword">Confirm Password</label>
-            <input id="confirmPassword" name="confirmPassword" type="password" required>
-        </div>
-
-        <div class="agree">
-            <input id="agree" name="agree" type="checkbox" required>
-            <label for="agree">I agree to the Terms of Use</label>
-        </div>
-
-    </form>
-
-    <div class="bottom-bar">
-        <button type="submit" class="submit">submit</button>
-        <button type="reset" class="cancel">Cancel</button>
-    </div>
-
-</div>
+    </section>
 
 </body>
 </html>
