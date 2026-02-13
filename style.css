@@ -10,15 +10,16 @@ body {
     color: white;
 }
 
-/* Контейнер */
 .wrapper {
     max-width: 1400px;
     width: 100%;
     margin: 40px auto;
     border: 2px solid white;
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 20px;
+    overflow: hidden; /* ВОТ ЭТО ВАЖНО */
 }
+
 
 /* Навбар */
 .navbar {
