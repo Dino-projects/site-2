@@ -69,7 +69,7 @@ body {
 
 .gallery img {
     flex: 0 0 31%;
-    height: 220px;
+    height: auto;
     object-fit: cover;
     border: 2px solid white;
     border-radius: 12px;
@@ -89,4 +89,5 @@ body {
     justify-content: space-between;
     font-size: 14px;
 }
+
 
