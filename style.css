@@ -1,95 +1,57 @@
-@font-face {
-    font-family: "MontserratCustom";
-    src: url("https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2");
+@font-face {* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-body {
-    margin: 0;
-    background: black;
-    font-family: "MontserratCustom", sans-serif;
-    color: white;
+header,
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-.wrapper {
-    max-width: 1400px;
-    width: 100%;
-    margin: 40px auto;
-    border: 5px solid white;
-    padding: 30px;
-    border-radius: 20px;
-    overflow: hidden; 
+/* 📱 Мобилка — по умолчанию в колонку */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
 }
 
-
-/* Навбар */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid white;
-    padding-bottom: 20px;
+article {
+  background: #e3f2fd;
+  padding: 20px;
 }
 
-.logo {
-    width: 40px;
-    height: 40px;
-    border: 2px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
+nav {
+  background: #fff3cd;
+  padding: 20px;
 }
 
-.nav-links {
-    display: flex;
-    gap: 30px;
+aside {
+  background: #d4edda;
+  padding: 20px;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
+/* 💻 Планшет и ПК */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  article {
+    flex: 2; /* основной контент шире */
+  }
+
+  nav {
+    flex: 1;
+  }
+
+  aside {
+    flex: 1;
+  }
 }
-
-.nav-links a:hover {
-    color: cyan;
-}
-
-.nav-links a:active {
-    color: red;
-}
-
-/* Галерея */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
-    gap: 30px;
-    margin: 40px 0;
-}
-
-.gallery img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    height: auto;
-    object-fit: cover;
-    border: 2px solid white;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
-
-/* Футер */
-.footer {
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-}
-
 
