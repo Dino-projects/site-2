@@ -1,9 +1,21 @@
-@font-face * {
+/* 🔧 Reset */
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 
 header,
 footer {
@@ -13,27 +25,31 @@ footer {
   padding: 20px;
 }
 
-/* 📱 Мобилка — по умолчанию в колонку */
+
 .container {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 10px;
+  flex: 1; 
 }
 
 article {
   background: #e3f2fd;
   padding: 20px;
+  flex: 2;
 }
 
 nav {
   background: #fff3cd;
   padding: 20px;
+  flex: 1;
 }
 
 aside {
   background: #d4edda;
   padding: 20px;
+  flex: 1;
 }
 
 /* 💻 Планшет и ПК */
@@ -41,16 +57,5 @@ aside {
   .container {
     flex-direction: row;
   }
-
-  article {
-    flex: 2; /* основной контент шире */
-  }
-
-  nav {
-    flex: 1;
-  }
-
-  aside {
-    flex: 1;
-  }
 }
+
