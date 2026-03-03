@@ -2,38 +2,172 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <title>Flexbox Layout</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="hero" id="home">
+    <div class="container">
+      <div class="hero__top">
+        <a class="logo" href="#home">Simple</a>
 
-<header>
-  <p>Header</p>
-</header>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Відкрити меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-<main class="container">
-  <article>
-    <h1>Що таке Lorem Ipsum?</h1>
-    <p>
-      Lorem Ipsum — це текст-"риба", що часто використовується
-      у пресі та веб-дизайні.
-    </p>
-  </article>
+        <nav class="nav" id="site-nav" aria-label="Головна навігація">
+          <ul class="nav__list">
+            <li><a href="#home">Homepage</a></li>
+            <li><a href="#about">About author</a></li>
+            <li><a href="#work">Works</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
 
-  <nav>
-    <p>Navigation</p>
-  </nav>
+      <div class="hero__content">
+        <h1>Design and layout</h1>
+        <p>
+          Lorem ipsum sit amet offer and god and bigsly carry. Lorem
+          has but the started that has spent some the way this coders.
+        </p>
+        <a class="btn" href="#contacts">Write me</a>
+      </div>
+    </div>
+  </header>
 
-  <aside>
-    <p>Sidebar</p>
-  </aside>
-</main>
+  <main>
+    <section class="about" id="about">
+      <div class="container about__content">
+        <h2>About me</h2>
+        <p>
+          Amet non, ipsum lorem is here not clear and just read and design.
+          Lorem ipsum sit over the started that has ever to do the only tool coder.
+        </p>
+      </div>
+    </section>
 
-<footer>
-  <p>Footer</p>
-</footer>
+    <section class="stats" aria-label="Project stats">
+      <div class="container stats__grid">
+        <article class="stat-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 4h12v12H4z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M8 8h4M8 11h5M8 14h3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M16 8h4v12H8v-4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <div>
+            <p class="stat-item__number">40+</p>
+            <p class="stat-item__label">projects</p>
+          </div>
+        </article>
 
+        <article class="stat-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 4h12v12H4z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M8 8h4M8 11h5M8 14h3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M16 8h4v12H8v-4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <div>
+            <p class="stat-item__number">40+</p>
+            <p class="stat-item__label">projects</p>
+          </div>
+        </article>
+
+        <article class="stat-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 4h12v12H4z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M8 8h4M8 11h5M8 14h3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M16 8h4v12H8v-4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <div>
+            <p class="stat-item__number">40+</p>
+            <p class="stat-item__label">projects</p>
+          </div>
+        </article>
+
+        <article class="stat-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 4h12v12H4z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M8 8h4M8 11h5M8 14h3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M16 8h4v12H8v-4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <div>
+            <p class="stat-item__number">40+</p>
+            <p class="stat-item__label">projects</p>
+          </div>
+        </article>
+
+        <article class="stat-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 4h12v12H4z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M8 8h4M8 11h5M8 14h3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M16 8h4v12H8v-4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <div>
+            <p class="stat-item__number">40+</p>
+            <p class="stat-item__label">projects</p>
+          </div>
+        </article>
+
+        <article class="stat-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 4h12v12H4z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M8 8h4M8 11h5M8 14h3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M16 8h4v12H8v-4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <div>
+            <p class="stat-item__number">40+</p>
+            <p class="stat-item__label">projects</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="container process__grid">
+        <div class="process__text">
+          <h2>How do I work</h2>
+          <p>
+            Lorem ipsum is fail has and over and in print and way. Lorem ipsum
+            has been the standard if that for Lorem tooks since the early 1500's.
+          </p>
+        </div>
+
+        <div class="video-wrap" id="work">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="How do I work"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer__content">
+      <p class="footer__name">John Smith</p>
+      <p class="footer__note">web-site designer</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav--open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  </script>
 </body>
 </html>
-
