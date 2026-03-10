@@ -1,25 +1,26 @@
-let grams = 150000;
+function getNumber(message) {
+    let value;
+    while (true) {
+        let input = prompt(message);
+        value = Number(input);
 
-let kg = grams / 1000;
-let centners = kg / 100;
-let tons = kg / 1000;
+        
+        if (input !== null && input.trim() !== "" && !isNaN(value)) {
+            return value;
+        }
+        alert("Це не число! Спробуйте ще раз.");
+    }
+}
 
-console.log(`${grams}г = ${kg}кг = ${centners.toFixed(2)} центнерів = ${tons.toFixed(3)} тон`);
+
+const number1 = getNumber("Введіть перше число:");
+const number2 = getNumber("Введіть друге число:");
 
 
-
-
-let seconds = 3665;
-
-let days = Math.trunc(seconds / 86400);
-seconds = seconds % 86400;
-
-let hours = Math.trunc(seconds / 3600);
-seconds = seconds % 3600;
-
-let minutes = Math.trunc(seconds / 60);
-seconds = seconds % 60;
-
-let secs = seconds;
-
-console.log(`${3665} sec = ${days} days ${hours} hrs ${minutes} mins ${secs} secs`);
+if (number1 % number2 === 0) {
+    console.log("Числа кратні!");
+    alert("Числа кратні!");
+} else {
+    console.log(false);
+    alert(false);
+}
